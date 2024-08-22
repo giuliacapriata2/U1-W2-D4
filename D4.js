@@ -31,6 +31,15 @@ function crazySum(a, b) {
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
+function crazyDiff(num) {
+    let difference = Math.abs(num - 19);
+
+    if (num > 19) {
+        return difference * 3;
+    } else {
+        return difference;
+    }
+}
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
@@ -57,7 +66,13 @@ console.log(boundary(n));
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function check3and7(n) {
+    if (n <= 0) {
+        return false;
+    }
+    return n % 3 === 0 || n % 7 === 0;
+}
+
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
