@@ -16,6 +16,15 @@ console.log(area(5, 10));
  la loro somma moltiplicata per tre.
 */
 
+function crazySum(a, b) {
+    if (a === b) {
+        return (a + b) * 3;
+    } else {
+        return a + b;
+    }
+}
+
+
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
